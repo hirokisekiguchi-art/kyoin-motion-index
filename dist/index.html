@@ -12,8 +12,226 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#e9eee8">
-  <meta name="description" content="教員サーチの3つのUIプロトタイプから動きのデザインパターンを抽出。実装根拠と動くデモで探せるモーション図鑑。">
-  <title>Motion Index — 教員サーチ UIモーション図鑑</title>
+  <meta name="description" content="UIモーション・Webアニメーション29種類を動くデモと実装コードで解説。ホバー、フェード、3Dページめくり、スクロール連動など、名称・使いどころ・実装方法を日本語と英語で探せる無料のUIデザイン図鑑。">
+  <title>UIモーション図鑑｜29種類のWebアニメーション・CSS実装例｜動きの標本室</title>
+  <link rel="canonical" href="https://kyoin-motion-index.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="動きの標本室">
+  <meta property="og:title" content="UIモーション図鑑｜29種類のWebアニメーション・CSS実装例｜動きの標本室">
+  <meta property="og:description" content="UIモーション・Webアニメーション29種類を動くデモと実装コードで解説。ホバー、フェード、3Dページめくり、スクロール連動など、名称・使いどころ・実装方法を日本語と英語で探せる無料のUIデザイン図鑑。">
+  <meta property="og:url" content="https://kyoin-motion-index.pages.dev/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kyoin-motion-index.pages.dev/#website",
+        "name": "動きの標本室",
+        "alternateName": [
+          "UIモーション図鑑",
+          "MOTION INDEX"
+        ],
+        "url": "https://kyoin-motion-index.pages.dev/",
+        "inLanguage": "ja"
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://kyoin-motion-index.pages.dev/#webpage",
+        "url": "https://kyoin-motion-index.pages.dev/",
+        "name": "UIモーション図鑑｜29種類のWebアニメーション・CSS実装例｜動きの標本室",
+        "description": "UIモーション・Webアニメーション29種類を動くデモと実装コードで解説。ホバー、フェード、3Dページめくり、スクロール連動など、名称・使いどころ・実装方法を日本語と英語で探せる無料のUIデザイン図鑑。",
+        "inLanguage": "ja",
+        "isPartOf": {
+          "@id": "https://kyoin-motion-index.pages.dev/#website"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "UIモーション29種類",
+          "numberOfItems": 29,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "3D表紙フリップ",
+              "description": "本の表紙がY軸を中心に約178度回転し、内側のページを見せる導入演出。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3Dページターン（ページめくり）",
+              "description": "表紙の後に紙の1枚が続いて回転。複数レイヤーで「本らしい奥行き」を作る。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "回転・移動による整列アニメーション",
+              "description": "左にずれ、少し傾いた本が中央の正位置へとゆっくり収まる。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "スタッガード・リビール（時間差表示）",
+              "description": "本の中の教員リストが行ごとに少し遅れてフェードアップする。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "テキストのフェードアップ",
+              "description": "「下にスクロールして、ページの先へ。」という案内テキストが数px浮き上がりながら現れる。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "オーバーレイのフェードアウト",
+              "description": "全画面の導入レイヤーを透過させ、背後の通常ページへ移行する。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "カードスタックの扇状展開",
+              "description": "重なった索引カードの角度と位置をずらし、扇のように少し広げる。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "ホバー時のリフトアップ",
+              "description": "東京都・神奈川県などの地域リンクがわずかに上へ移動する。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "都道府県タイルの浮き上がり",
+              "description": "都道府県タイルが3px上がり、輪郭の色も緑寄りに変わる。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "索引カードのホバーリフト",
+              "description": "新版の地域カードでも浮上とボーダーの変化を利用している。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "アクセントラインの伸長",
+              "description": "検索結果の左端にある細い縦線が、中心から上下に伸びる。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "アクセントラインの拡張・フェードイン",
+              "description": "新版では縦線が短い状態から伸びると同時に、透明から可視へ変化する。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "矢印のホバースライド",
+              "description": "右向き矢印が3〜4px進み、移動先があることを暗示する。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "フォーカス時の枠・影の変化",
+              "description": "検索ボックスの枠色と下方向の影が緑色へなめらかに変化する。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "name": "ボタンのカラートランジション",
+              "description": "ボタンの背景色・文字色が一瞬で切り替わらず、短時間で補間される。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 16,
+              "name": "カードの輪郭・影の強調",
+              "description": "カードの輪郭が濃くなり、下方向に小さな影が付く。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 17,
+              "name": "フェード＋スライドイン",
+              "description": "要素が少し下から上昇しながら不透明になって表示される。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 18,
+              "name": "検索結果のスタッガード表示",
+              "description": "1〜3行目のカードに40msずつ遅延を付け、流れるような入り方にする。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 19,
+              "name": "比較トレイのスライドイン",
+              "description": "下部の固定比較バーが少し低い位置から現れ、選択された項目数を示す。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 20,
+              "name": "モーダルのフェードアップ",
+              "description": "中央のダイアログ本体が7pxほど浮き上がりながら現れる。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 21,
+              "name": "出典モーダルの出現",
+              "description": "新版で導入された出典表示用のダイアログが、コンパクトなフェードアップで登場。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 22,
+              "name": "詳細ページの表示トランジション",
+              "description": "詳細ページ全体が少し上昇しながら出現する画面遷移。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 23,
+              "name": "コンテンツ切替のフェードアップ",
+              "description": "切り替わった索引コンテンツが軽く浮き上がりながら出現する。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 24,
+              "name": "グリッドの順次表示",
+              "description": "地域タブを切り替えると、4列（狭い画面では2列）のグリッド全体がフェードアップして現れる。カードごとの時間差はない。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 25,
+              "name": "フィード切替のフェード表示",
+              "description": "情報フィードを切り替えた時に、リスト全体が小さくフェードアップする。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 26,
+              "name": "更新履歴の展開表示（ディスクロージャー）",
+              "description": "更新情報の行の下に新しい記録領域が現れ、少し上がりながら表示される。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 27,
+              "name": "追加項目の段階的表示（Load More）",
+              "description": "表示件数が増え、新たに描画されたリスト項目がフェードアップする。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 28,
+              "name": "スクロール連動アニメーション（スクラブ）",
+              "description": "全アニメーションを1つの再生時刻で管理し、スクロール分だけ時間を加速させる。"
+            },
+            {
+              "@type": "ListItem",
+              "position": 29,
+              "name": "スムースアンカースクロール",
+              "description": "結果一覧やページ内セクションへ、急にジャンプせず滑らかに移動する。"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
@@ -52,7 +270,38 @@
       <div class="catalog-head"><div><span class="section-number">01 / MOTION LIBRARY</span><h2 id="catalogTitle">動きの標本室<span>↘</span></h2><p>サンプルを触って、実装されている動きを確かめてください。</p></div><div class="catalog-count"><strong id="visibleCount">—</strong><span> / <span id="totalCount">—</span> PATTERNS</span></div></div>
       <div class="catalog-layout">
         <aside class="sidebar" aria-label="カテゴリフィルター"><div class="sidebar-label">BROWSE BY TYPE</div><div class="filters" id="filters"></div><div class="sidebar-divider"></div><div class="sidebar-note"><span class="asterisk">＊</span><strong>図鑑の読み方</strong><p>名称は一般的なモーションデザイン用語を優先し、定着した正式名がない場合は動きの特徴から記述しています。</p><span class="sidebar-note-foot">SOURCE-VERIFIED, NOT A PIXEL COPY</span></div></aside>
-        <div class="catalog-main"><div class="toolbar"><label class="search-wrap" for="searchInput"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg><input id="searchInput" autocomplete="off" placeholder="名前・効果・CSS・実装箇所で検索" aria-label="モーションを検索"><kbd>/</kbd></label><select id="versionSelect" aria-label="バージョンで絞り込み"><option value="all">すべてのバージョン</option><option value="1">V1 から存在</option><option value="2">V2 で追加</option><option value="3">V3 で追加</option></select></div><div class="active-filters" id="activeFilters" aria-live="polite"></div><div id="catalogGrid" class="catalog-grid"></div><div id="noResults" class="no-results" hidden><span>⌕</span><h3>一致するモーションがありません</h3><p>検索語を短くするか、フィルターを解除してください。</p><button id="resetFilters" type="button">すべて表示する ↗</button></div></div>
+        <div class="catalog-main"><div class="toolbar"><label class="search-wrap" for="searchInput"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg><input id="searchInput" autocomplete="off" placeholder="名前・効果・CSS・実装箇所で検索" aria-label="モーションを検索"><kbd>/</kbd></label><select id="versionSelect" aria-label="バージョンで絞り込み"><option value="all">すべてのバージョン</option><option value="1">V1 から存在</option><option value="2">V2 で追加</option><option value="3">V3 で追加</option></select></div><div class="active-filters" id="activeFilters" aria-live="polite"></div><div id="catalogGrid" class="catalog-grid">
+<!-- HTML fallback: app.js replaces these cards with the interactive demos on load. -->
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 001</span><span class="card-category">オープニング演出</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>3D Book Cover Flip</span></div><h3>3D表紙フリップ</h3><p>本の表紙がY軸を中心に約178度回転し、内側のページを見せる導入演出。</p><div class="card-meta"><span>3D transform / keyframes</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 002</span><span class="card-category">オープニング演出</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>3D Page Turn</span></div><h3>3Dページターン（ページめくり）</h3><p>表紙の後に紙の1枚が続いて回転。複数レイヤーで「本らしい奥行き」を作る。</p><div class="card-meta"><span>3D transform / keyframes</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 003</span><span class="card-category">オープニング演出</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Translate &amp; Rotate Settle</span></div><h3>回転・移動による整列アニメーション</h3><p>左にずれ、少し傾いた本が中央の正位置へとゆっくり収まる。</p><div class="card-meta"><span>translate / rotate / easing</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 004</span><span class="card-category">オープニング演出</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Staggered Reveal</span></div><h3>スタッガード・リビール（時間差表示）</h3><p>本の中の教員リストが行ごとに少し遅れてフェードアップする。</p><div class="card-meta"><span>opacity / translateY / delay</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 005</span><span class="card-category">オープニング演出</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Text Fade Up</span></div><h3>テキストのフェードアップ</h3><p>「下にスクロールして、ページの先へ。」という案内テキストが数px浮き上がりながら現れる。</p><div class="card-meta"><span>opacity / translateY</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 006</span><span class="card-category">オープニング演出</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Overlay Dissolve</span></div><h3>オーバーレイのフェードアウト</h3><p>全画面の導入レイヤーを透過させ、背後の通常ページへ移行する。</p><div class="card-meta"><span>opacity / animation fill</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 007</span><span class="card-category">ホバー・反応</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Fan-out Card Stack</span></div><h3>カードスタックの扇状展開</h3><p>重なった索引カードの角度と位置をずらし、扇のように少し広げる。</p><div class="card-meta"><span>rotate / translate / easing</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 008</span><span class="card-category">ホバー・反応</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Hover Lift</span></div><h3>ホバー時のリフトアップ</h3><p>東京都・神奈川県などの地域リンクがわずかに上へ移動する。</p><div class="card-meta"><span>translateY / transition</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 009</span><span class="card-category">ホバー・反応</span><span class="version-badge">V3+</span></div><div class="card-content"><div class="card-index-line"><span>Tile Hover Lift</span></div><h3>都道府県タイルの浮き上がり</h3><p>都道府県タイルが3px上がり、輪郭の色も緑寄りに変わる。</p><div class="card-meta"><span>translateY / border tween</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 010</span><span class="card-category">ホバー・反応</span><span class="version-badge">V2+</span></div><div class="card-content"><div class="card-index-line"><span>Editorial Card Lift</span></div><h3>索引カードのホバーリフト</h3><p>新版の地域カードでも浮上とボーダーの変化を利用している。</p><div class="card-meta"><span>translateY / border</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 011</span><span class="card-category">ホバー・反応</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Accent Rail Grow</span></div><h3>アクセントラインの伸長</h3><p>検索結果の左端にある細い縦線が、中心から上下に伸びる。</p><div class="card-meta"><span>scaleY / transition</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 012</span><span class="card-category">ホバー・反応</span><span class="version-badge">V2+</span></div><div class="card-content"><div class="card-index-line"><span>Accent Rail Expand &amp; Fade</span></div><h3>アクセントラインの拡張・フェードイン</h3><p>新版では縦線が短い状態から伸びると同時に、透明から可視へ変化する。</p><div class="card-meta"><span>scaleY / opacity / transition</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 013</span><span class="card-category">ホバー・反応</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Directional Arrow Nudge</span></div><h3>矢印のホバースライド</h3><p>右向き矢印が3〜4px進み、移動先があることを暗示する。</p><div class="card-meta"><span>translateX / transition</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 014</span><span class="card-category">ホバー・反応</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Focus Ring &amp; Shadow Tween</span></div><h3>フォーカス時の枠・影の変化</h3><p>検索ボックスの枠色と下方向の影が緑色へなめらかに変化する。</p><div class="card-meta"><span>border-color / box-shadow</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 015</span><span class="card-category">ホバー・反応</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Color Tween</span></div><h3>ボタンのカラートランジション</h3><p>ボタンの背景色・文字色が一瞬で切り替わらず、短時間で補間される。</p><div class="card-meta"><span>background / color transition</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 016</span><span class="card-category">ホバー・反応</span><span class="version-badge">V2+</span></div><div class="card-content"><div class="card-index-line"><span>Border &amp; Elevation Accent</span></div><h3>カードの輪郭・影の強調</h3><p>カードの輪郭が濃くなり、下方向に小さな影が付く。</p><div class="card-meta"><span>border-color / box-shadow</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 017</span><span class="card-category">表示・画面切替</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Fade &amp; Slide In</span></div><h3>フェード＋スライドイン</h3><p>要素が少し下から上昇しながら不透明になって表示される。</p><div class="card-meta"><span>opacity / translateY</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 018</span><span class="card-category">表示・画面切替</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Staggered List Entrance</span></div><h3>検索結果のスタッガード表示</h3><p>1〜3行目のカードに40msずつ遅延を付け、流れるような入り方にする。</p><div class="card-meta"><span>nth-child / animation-delay</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 019</span><span class="card-category">表示・画面切替</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Bottom Tray Entrance</span></div><h3>比較トレイのスライドイン</h3><p>下部の固定比較バーが少し低い位置から現れ、選択された項目数を示す。</p><div class="card-meta"><span>bottom / opacity keyframes</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 020</span><span class="card-category">表示・画面切替</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Modal Fade Up</span></div><h3>モーダルのフェードアップ</h3><p>中央のダイアログ本体が7pxほど浮き上がりながら現れる。</p><div class="card-meta"><span>opacity / translateY</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 021</span><span class="card-category">表示・画面切替</span><span class="version-badge">V2+</span></div><div class="card-content"><div class="card-index-line"><span>Source Sheet Reveal</span></div><h3>出典モーダルの出現</h3><p>新版で導入された出典表示用のダイアログが、コンパクトなフェードアップで登場。</p><div class="card-meta"><span>entry-in / overlay</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 022</span><span class="card-category">表示・画面切替</span><span class="version-badge">V2+</span></div><div class="card-content"><div class="card-index-line"><span>Page Entrance Transition</span></div><h3>詳細ページの表示トランジション</h3><p>詳細ページ全体が少し上昇しながら出現する画面遷移。</p><div class="card-meta"><span>entry-in / page mount</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 023</span><span class="card-category">表示・画面切替</span><span class="version-badge">V2+</span></div><div class="card-content"><div class="card-index-line"><span>Content Swap Fade-up</span></div><h3>コンテンツ切替のフェードアップ</h3><p>切り替わった索引コンテンツが軽く浮き上がりながら出現する。</p><div class="card-meta"><span>entry-in / remount</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 024</span><span class="card-category">表示・画面切替</span><span class="version-badge">V3+</span></div><div class="card-content"><div class="card-index-line"><span>Grid Content Reveal</span></div><h3>グリッドの順次表示</h3><p>地域タブを切り替えると、4列（狭い画面では2列）のグリッド全体がフェードアップして現れる。カードごとの時間差はない。</p><div class="card-meta"><span>opacity / translateY</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 025</span><span class="card-category">表示・画面切替</span><span class="version-badge">V3+</span></div><div class="card-content"><div class="card-index-line"><span>Filtered Feed Reveal</span></div><h3>フィード切替のフェード表示</h3><p>情報フィードを切り替えた時に、リスト全体が小さくフェードアップする。</p><div class="card-meta"><span>ab-page-in</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 026</span><span class="card-category">表示・画面切替</span><span class="version-badge">V3+</span></div><div class="card-content"><div class="card-index-line"><span>Inline Panel Reveal</span></div><h3>更新履歴の展開表示（ディスクロージャー）</h3><p>更新情報の行の下に新しい記録領域が現れ、少し上がりながら表示される。</p><div class="card-meta"><span>ab-page-in</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 027</span><span class="card-category">表示・画面切替</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Progressive List Reveal</span></div><h3>追加項目の段階的表示（Load More）</h3><p>表示件数が増え、新たに描画されたリスト項目がフェードアップする。</p><div class="card-meta"><span>state / entry-in</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 028</span><span class="card-category">スクロール操作</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Scroll-Scrubbed Timeline</span></div><h3>スクロール連動アニメーション（スクラブ）</h3><p>全アニメーションを1つの再生時刻で管理し、スクロール分だけ時間を加速させる。</p><div class="card-meta"><span>Web Animations API / rAF</span></div></div></article>
+<article class="motion-card"><div class="card-topline"><span class="card-id">FIG. 029</span><span class="card-category">スクロール操作</span><span class="version-badge">V1+</span></div><div class="card-content"><div class="card-index-line"><span>Smooth Anchor Scrolling</span></div><h3>スムースアンカースクロール</h3><p>結果一覧やページ内セクションへ、急にジャンプせず滑らかに移動する。</p><div class="card-meta"><span>scroll-behavior / scrollIntoView</span></div></div></article>
+</div><div id="noResults" class="no-results" hidden><span>⌕</span><h3>一致するモーションがありません</h3><p>検索語を短くするか、フィルターを解除してください。</p><button id="resetFilters" type="button">すべて表示する ↗</button></div></div>
       </div>
     </section>
 
